@@ -1,22 +1,293 @@
+'use client'
 import React from 'react'
+import {BsCheckCircleFill} from 'react-icons/bs'
+import {AiOutlineCalendar} from 'react-icons/ai'
+import {HiOutlineCube} from 'react-icons/hi'
+import {BsFillTagFill} from 'react-icons/bs'
+import {RiArrowDropUpLine} from 'react-icons/ri'
+import Link from 'next/link'
+import './globals.css'
+import Doc from './Components/Doctorsname'
+import Image from 'next/image'
+import {TbSquareRoundedChevronRightFilled} from 'react-icons/tb'
+import {IoChevronForwardCircleOutline} from 'react-icons/io5'
+import Footer from './Components/Footer'
+import Readmore from './Components/Readmore'
 
 
-export default function page() {
+// async function doctorsname(){
+//   const response = await fetch('https://raw.githubusercontent.com/samiat21/data-json/main/data.json')
+//   const data = await response.json()
+
+//   return data
+// }
+
+
+export default  function page() {
+  // const data = await doctorsname()
+  // const sam = data.map(doctor =>(
+  //     <div key={doctor.id}>
+  
+  //     <Image src={doctor.image} alt={doctor.name} width={350} height={350} title={doctor.name}/>
+  //     <h2>{doctor.name}</h2>
+  //     <p>{doctor.specialty}</p>
+  //     <p className='w-[350px]'>{doctor.job_description}</p>
+  //       </div>
+
+  // ))
+
+       const para1 = 'The health news division of NPR is your go-to source for the state of healthcare across the nation and around the world. NPR Shots will keep you in the know about everything from epidemics and public health concerns to the latest news about the insurance industry. You will always be on top of current events in the wellness space if you follow this blog.'
+       const para2 = 'For nearly 40 years, Physicians Weekly LLC, has been a trusted source of medical news and education for healthcare professionals. Physicians Weekly provides trusted medical news to healthcare professionals in over 10,000 top medical institutions, linking current and best healthcare practices to successfully meet todays challenges in the medical field.'
+      const para3 = 'Health Affairs is the leading journal of health policy thought & research. The peer-reviewed journal was founded in 1981 under the aegis of Project HOPE. Health Affairs explores health policy issues of current concern in domestic & international spheres.'
+      const para4 = 'Sharing successes, challenges and daily happenings in the department of medicine. Johns Hopkins Medicine are committed to promoting biomedical discovery, teaching the next generation of doctors, and improving health in our neighborhood and around the world.'
+      const para5 = 'Insights and opinions on the latest medical research, clinical practices, and developments in the field. At BMC, research is always in progress. We are committed to continual innovation to better support the needs of our communities, ensuring the integrity of the research we publish & championing the benefits of open research.'
+      const para6 = 'The Stanford Medicine 25 Blog features articles promoting the culture of bedside medicine. Stanford Medicine 25 teaches and promotes bedside medicine exam skills to students, residents, and healthcare professionals both in-person and online. The Stanford Medicine 25 team is the core group of physicians, faculty, and students led by Dr. Abraham  Verghese.'
+       
+
   return (
-    <div>
-      <div>
-          <video  className='w-[1200px] mt-[50px] h-[400px] ml-[80px]' controls>
-            <source src='./media/doctor2patient.mp4' type='video/mp4' />
-          </video>
+    <div className=''>
+      
+      <div  className='mt-[150px] mx-[200px]'>
+          {/* <video  className='w-[2000px] mt-[50px] h-[600px] ml-[100px]'>
+          <source src='/doctor2patient.mp4'  controls={true} type='video/mp4'/>
+          </video> */}
+          <iframe width="1500px" height="600px" src="https://www.youtube.com/embed/RpzxB5bmwmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
      </div>
      
      
-     <div className='flex flex-row mt-[30px]'>
-      <div className='flex flex-col ml-[80px]'>
-    <h2 className='text-[40px] text-[#1d2951] font-bold'>We Take Care Of <br /> Your Health</h2>
-     <button type="submit" className='text-white bg-[#1d2951] mt-6 border-2'>Book for schedule</button>
+     <div className='flex flex-row mt-[30px] gap-6'>
+      <div className='flex flex-col ml-[160px]'>
+    <h2 className='text-[50px] text-[#1d2951]  w-[500px] font-bold'>We Take Care Of <br /> Your Health</h2>
+     <Link href='/appointment'><button type="submit" className='text-white bg-blue-600 mt-6 border w-[200px] h-[45px] px-2 py-2'>Book for schedule</button></Link>
+      </div>
+      <div className='ml-[450px] w-[500px]'>
+      <div>
+        <div className='flex'>
+      <span className='mt-1'><BsCheckCircleFill size={20} /></span>
+      <span className='ml-4 text-xl font-semibold text-[#1d2951] mr-5'>No waiting period</span> 
+      <span  className='mt-1'><BsCheckCircleFill size={20}/></span>
+      <span className='ml-3 text-xl font-semibold text-[#1d2951]'>Instant Health Reports</span>
+      </div>
+      <p className='mt-[20px]'>We provide always the best of our services for our clients <br /> and listen to what they say about me and about my care <br /> and services.</p>
+      </div>
+      <div className="flex flex-row space-x-12 mt-5 bg-[#FF8C00] w-[450px] text-white p-4">
+        <div className="flex flex-col">
+          <span>1k+</span>
+          <span>Satisfy Patients</span>
+        </div>
+        <div className="flex flex-col">
+          <span>09</span>
+          <span>Expert Doctors</span>
+        </div>
+        <div className="flex flex-col">
+          <span>450</span>
+          <span>Patients</span>
+        </div>
+        </div>
       </div>
      </div>
+
+     <div className='ml-[160px] mt-[200px]'>
+      <h2 className='text-[40px] text-[#1d2951] w-[500px] font-bold'>How to Get Help <br /> from Us</h2>
+      
+      <div className='flex flex-row gap-6 mt-[30px]'>
+        <div className='border border-[#ffedd5] w-[350px] h-[250px] p-5'>
+           <div className=''>
+          <AiOutlineCalendar size={20} color='#FF8C00'/>
+       </div><br />
+       <div className="">
+       <h3 className='text-xl text-[#1d2951] font-semibold'>Book an Appointment</h3><br />
+       <p>Online or in-center,we take the time to learn all about you and go beyond the symptoms to find the root of your condition.</p>
     </div>
+       </div>
+
+        <div className="border border-[#ffedd5] w-[350px] h-[250px] p-5">
+        <div className=''>
+          <HiOutlineCube size={20} color='#FF8C00'/>
+        </div><br />
+        <div className="">
+        <h3 className='text-xl text-[#1d2951] font-semibold'>Get Personalized lab work</h3><br />
+       <p>Online or in-center,we take the time to learn all about you and go beyond the symptoms to find the root of your condition.</p>
+       </div>
+        </div>
+        <div className="border border-[#ffedd5] w-[350px] h-[250px] p-5">
+        <div className="">
+          <BsFillTagFill size={20} color='#FF8C00'/>
+          </div><br />
+          <div className="">
+            <h3 className='text-xl text-[#1d2951] font-semibold'>Start your plan</h3><br />
+            <p>Online or in-center,we take the time to learn all about you and go beyond the symptoms to find the root of your condition.</p>
+          </div>
+          </div>
+      </div>
+     </div>
+
+     <div className='flex justify-center mt-[50px]'>
+      <h2 className='text-[40px] text-[#1d2951] w-[500px] font-bold'>Our Top Doctors' List With Categories</h2>
+     </div>
+
+     <div className="flex ml-[160px] w-[250px]  border-b-2 mt-3">
+      <span className="text-2xl text-blue-500  mt-2">
+      Gastroenterologists
+      </span>
+      <span className='mb-1 bg- text-blue-500'> <RiArrowDropUpLine size={40}/></span>
+      </div>
+      <div className='mt-[30px] w-[530px]'>
+      <p className='ml-[160px]'>Nutrition and lifestyle changes gives you the clearest path forward with success</p>
+      </div>
+      
+      <div className="grid grid-cols-3 mt-[50px] ml-[160px]">
+        {/* <div className="grid grid-cols-2 gap-[10px] col-span-2">
+          {sam}
+        </div> */}
+        <div className="col-span-1 mt-[200px]">
+          <ul>
+            <Link href=''>
+            <li className='border-b-2 pb-4 text-4xl text-blue-500 w-[350px]'>Dermatologists</li>
+            </Link>
+           <Link href=''>
+           <li className='border-b-2 pb-4 text-4xl mt-[40px] text-blue-500  w-[350px]'>Cardiologists</li>
+           </Link>
+            <Link href=''>
+            <li className='border-b-2 pb-4 text-4xl mt-[40px] text-blue-500 w-[350px]'>Ophthalmologists</li>
+            </Link>
+            <Link href=''>
+            <li className='border-b-2 pb-4 text-4xl mt-[40px] text-blue-500 w-[350px]'>Allergists</li>
+            </Link>
+            <Link href=''>
+            <li className='border-b-2 pb-4 text-4xl mt-[40px] text-blue-500  w-[350px]'>Endocrinologists</li>
+            </Link>
+           </ul>
+           <Link href="/doctors">
+           <button className='text-white bg-blue-600 mt-6 border rounded-md w-[200px] h-[45px] px-2 py-2'>View all Doctors</button>
+           </Link>
+        </div>
+       </div>
+    
+    
+    <div className="mt-[200px] flex flex-col justify-center items-center space-y-4">
+      <h2 className='text-[40px] text-[#1d2951] font-bold'>Our Approach</h2>
+      <p>Receive your tailored health plan, create <br /> <span className='ml-3'>our Bravaa supplements and more.</span></p>
+       <div className="flex flex-row space-x-28">
+      <div className="w-[200px]">
+        <TbSquareRoundedChevronRightFilled size={100} color='#1d2951'/>
+        <h5 className='text-[15px] text-[#1d2951] font-semibold mt-3'>Getting to know you & your health</h5>
+        <p className='text-[#1d2951] mt-3'>Your Bravaa health team takes time to know your health</p>
+      </div>
+      <div className="w-[200px] mt-[100px]">
+        <TbSquareRoundedChevronRightFilled size={100} color='#1d2951'/>
+        <h5 className='text-[15px] text-[#1d2951] font-semibold mt-3'>In-depth testing and Analysis</h5>
+        <p className='text-[#1d2951] mt-3'>Your Bravaa health team takes time to know your health</p>
+      </div>
+      <div className="w-[200px] mt-[50px]">
+        <TbSquareRoundedChevronRightFilled size={100} color='#1d2951' />
+        <h5 className='text-[15px] text-[#1d2951] font-semibold mt-3'>Personalized health plan</h5>
+        <p className='text-[#1d2951] mt-3'>Your Bravaa health team takes time to know your health</p>
+      </div>
+      </div>
+  </div>
+    
+    <div className="mt-[100px]">
+      <h2 className='flex justify-center items-center text-[40px] text-[#1d2951] font-bold'>Read Our Latest Blogs</h2>
+    </div>
+
+    <div className="grid grid-cols-2 ml-[120px] mt-[100px] space-y-7">
+      
+      <div className="flex w-[600px] rounded-lg h-[200px]">
+        <div className="">
+        <Image className="rounded-lg" src='https://images.unsplash.com/photo-1581091013158-5c7184f43b62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' width={200} height={420}/>
+       </div>
+       <div className="pl-4 pt-5 space-y-5 bg-slate-100 pb-1">
+       <h2 className='text-2xl font-semibold'>Health Shots</h2>
+       <div className="space-x-3">
+       <span className='border bg-slate-300 py-1 px-2'>June 21,2023</span>
+       <span  className='border bg-slate-300 py-1 px-2'>NPR</span>
+       </div>
+       <Readmore text={para1}/>
+      </div>
+      </div>
+      
+      {/* <div className="flex w-[600px] rounded-lg">
+        <div className="">
+          <Image className="rounded-lg" src='https://images.unsplash.com/photo-1638202993928-7267aad84c31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' width={200} height={400}/>
+        </div>
+        <div className="pl-4 pt-5 space-y-5  bg-slate-100">
+       <h2 className='text-2xl font-semibold'>Physicians Weekly</h2>
+       <div className="space-x-3">
+       <span className='border bg-slate-300 py-1 px-2'>June 21,2023</span>
+       <span className='border bg-slate-300 py-1 px-2'>NPR</span>
+        </div>
+       <Readmore text={para2}/>
+        </div>
+      </div> */}
+
+      <div className="flex w-[600px] rounded-lg"> 
+        <div className="">
+          <Image className="rounded-lg" src='https://images.unsplash.com/photo-1581091007718-0c50d599bfd0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' width={200} height={400}/>
+        </div>
+        <div className="pl-4 pt-5 space-y-5  bg-slate-100 ">
+       <h2 className='text-2xl font-semibold'>Health Affairs</h2>
+       <div className="space-x-3">
+       <span className='border bg-slate-300 py-1 px-2'>June 21,2023</span>
+       <span className='border bg-slate-300 py-1 px-2'>NPR</span>
+       </div>
+       <Readmore text={para3}/>
+        </div>
+      </div>
+
+      <div className="flex w-[600px] rounded-lg">
+        <div className="">
+          <Image className="rounded-lg" src='  https://images.unsplash.com/photo-1562243061-204550d8a2c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' width={200} height={400}/>
+        </div>
+        <div className="pl-4 pt-5 space-y-5 bg-slate-100">
+        <h2 className='text-2xl font-semibold'>Medicine Matters</h2>
+        <div className="space-x-3">
+       <span className='border bg-slate-300 py-1 px-2'>June 21,2023</span>
+       <span className='border bg-slate-300 py-1 px-2'>NPR</span>
+        </div>
+       <Readmore text={para4}/>
+        </div>
+      </div>
+
+      <div className="flex w-[600px] rounded-lg">
+        <div className="">
+          <Image className="rounded-lg" src=' https://images.unsplash.com/photo-1581091013158-5c7184f43b62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' width={200} height={400}/>
+        </div>
+        <div className="pl-4 pt-5 space-y-5  bg-slate-100">
+        <h2 className='text-2xl font-semibold'>Biomedical Central</h2>
+       <div className="space-x-3">
+       <span className='border bg-slate-300 py-1 px-2'>June 21,2023</span>
+       <span className='border bg-slate-300 py-1 px-2'>NPR</span>
+       </div>
+       <Readmore text={para5}/>
+        </div>
+      </div>
+        
+        {/* <div className="flex w-[600px] rounded-lg">
+        <div className="">
+          <Image className="rounded-lg" src='https://plus.unsplash.com/premium_photo-1675033559419-295e2e4187f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=663&q=80' width={200} height={400}/>
+        </div>
+        <div className="pl-4 pt-5 space-y-5  bg-slate-100">
+        <h2 className='text-2xl font-semibold'>Stanford Medicine 25 Blog</h2>
+      <div className="space-x-3">
+      <span className='border bg-slate-300 py-1 px-2>June 21,2023</span>
+       <span className='border bg-slate-300 py-1 px-2'></span>NPR</span>
+         </div>
+       <Readmore text={para6}/>
+        </div>
+      </div> */}
+    
+    
+    </div>
+    
+   
+   
+   
+   
+   
+   
+    </div>
+
+  
   )
 }
