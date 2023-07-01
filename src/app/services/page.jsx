@@ -22,7 +22,7 @@ export default function page() {
         </li><br />
         <li>
       <span className='font-semibold text-[#1d2951]'>  Neurology:</span> The neurology department at Hope Medical Center focuses on the diagnosis and treatment of neurological disorders, including 
-        stroke, epilepsy, Parkinson's disease, and multiple sclerosis. Expert neurologists work closely with patients, providing advanced diagnostic
+        stroke, epilepsy, Parkinsons disease, and multiple sclerosis. Expert neurologists work closely with patients, providing advanced diagnostic
          techniques and personalized treatment plans.
         </li><br />
         <li>
