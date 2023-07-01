@@ -195,7 +195,7 @@ export default  function page() {
       
       <div className="flex w-[600px] rounded-lg h-[200px]">
         <div className="">
-        <Image className="rounded-lg" src='https://images.unsplash.com/photo-1581091013158-5c7184f43b62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' width={200} height={420}/>
+        <Image className="rounded-lg" src='https://images.unsplash.com/photo-1581091013158-5c7184f43b62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' alt="medics" width={200} height={420}/>
        </div>
        <div className="pl-4 pt-5 space-y-5 bg-slate-100 pb-1">
        <h2 className='text-2xl font-semibold'>Health Shots</h2>
@@ -209,7 +209,7 @@ export default  function page() {
       
       {/* <div className="flex w-[600px] rounded-lg">
         <div className="">
-          <Image className="rounded-lg" src='https://images.unsplash.com/photo-1638202993928-7267aad84c31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' width={200} height={400}/>
+          <Image className="rounded-lg" src='https://images.unsplash.com/photo-1638202993928-7267aad84c31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' alt="medications" width={200} height={400}/>
         </div>
         <div className="pl-4 pt-5 space-y-5  bg-slate-100">
        <h2 className='text-2xl font-semibold'>Physicians Weekly</h2>
@@ -223,7 +223,7 @@ export default  function page() {
 
       <div className="flex w-[600px] rounded-lg"> 
         <div className="">
-          <Image className="rounded-lg" src='https://images.unsplash.com/photo-1581091007718-0c50d599bfd0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' width={200} height={400}/>
+          <Image className="rounded-lg" src='https://images.unsplash.com/photo-1581091007718-0c50d599bfd0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' alt="hospital" width={200} height={400}/>
         </div>
         <div className="pl-4 pt-5 space-y-5  bg-slate-100 ">
        <h2 className='text-2xl font-semibold'>Health Affairs</h2>
@@ -237,7 +237,7 @@ export default  function page() {
 
       <div className="flex w-[600px] rounded-lg">
         <div className="">
-          <Image className="rounded-lg" src='  https://images.unsplash.com/photo-1562243061-204550d8a2c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' width={200} height={400}/>
+          <Image className="rounded-lg" src='  https://images.unsplash.com/photo-1562243061-204550d8a2c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' alt="doc" width={200} height={400}/>
         </div>
         <div className="pl-4 pt-5 space-y-5 bg-slate-100">
         <h2 className='text-2xl font-semibold'>Medicine Matters</h2>
@@ -251,7 +251,7 @@ export default  function page() {
 
       <div className="flex w-[600px] rounded-lg">
         <div className="">
-          <Image className="rounded-lg" src=' https://images.unsplash.com/photo-1581091013158-5c7184f43b62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' width={200} height={400}/>
+          <Image className="rounded-lg" src=' https://images.unsplash.com/photo-1581091013158-5c7184f43b62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' alt="hosp" width={200} height={400}/>
         </div>
         <div className="pl-4 pt-5 space-y-5  bg-slate-100">
         <h2 className='text-2xl font-semibold'>Biomedical Central</h2>
