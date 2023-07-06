@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Navbar() {
   return (
-    <nav className='flex justify-around items-end bg-blue-500 text-white w-[100%] h-[100px] pb-[40px] fixed top-0'>
+    <nav className='flex justify-around items-end bg-blue-500 text-white w-[100vw] h-[100px] pb-[40px] fixed top-0'>
         <div>
             <h2 className=''><span>Bra</span>vaa</h2>
         </div>
