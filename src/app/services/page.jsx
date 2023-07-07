@@ -22,7 +22,7 @@ export default function page() {
         </li><br />
         <li>
       <span className='font-semibold text-[#1d2951]'>  Neurology:</span> The neurology department at Hope Medical Center focuses on the diagnosis and treatment of neurological disorders, including 
-        stroke, epilepsy, Parkinson's disease, and multiple sclerosis. Expert neurologists work closely with patients, providing advanced diagnostic
+        stroke, epilepsy, Parkinsons disease, and multiple sclerosis. Expert neurologists work closely with patients, providing advanced diagnostic
          techniques and personalized treatment plans.
         </li><br />
         <li>
@@ -38,7 +38,7 @@ export default function page() {
        </ol>
        </div>
        <div >
-  <Image className='rounded-3xl' src='https://images.unsplash.com/photo-1512102438733-bfa4ed29aef7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80' width={700} height={800} />
+  <Image className='rounded-3xl' src='https://images.unsplash.com/photo-1512102438733-bfa4ed29aef7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80' alt="surgery" width={700} height={800} />
   </div>
   </div>
 
