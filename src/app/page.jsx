@@ -134,6 +134,7 @@ export default  function page() {
      <div className='flex justify-center mt-[50px]'>
       <h2 className='text-[40px] text-[#1d2951] w-[500px] font-bold'>Our Top Doctors List With Categories</h2>
      </div>
+     </div>
     
       
       <div className="md:grid md:grid-cols-3 mt-[50px] md:ml-[160px] ml-[50px]">
@@ -286,6 +287,6 @@ export default  function page() {
     </div>
     </div>
     </div>
-  
+    </div>
   )
 }
