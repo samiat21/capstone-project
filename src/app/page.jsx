@@ -13,6 +13,7 @@ import {TbSquareRoundedChevronRightFilled} from 'react-icons/tb'
 import {IoChevronForwardCircleOutline} from 'react-icons/io5'
 import Footer from './Components/Footer'
 import Readmore from './Components/Readmore'
+import Swiper from 'swiper'
 
 
 // async function doctorsname(){
@@ -47,27 +48,29 @@ export default  function page() {
   return (
     <div className=''>
       
-      <div  className='mt-[150px] mx-[200px]'>
+      <div  className='mt-[150px] md:mx-[200px] sm:ml-[50px]'>
           {/* <video  className='w-[2000px] mt-[50px] h-[600px] ml-[100px]'>
           <source src='/doctor2patient.mp4'  controls={true} type='video/mp4'/>
           </video> */}
-          <iframe width="1500px" height="600px" src="https://www.youtube.com/embed/RpzxB5bmwmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe className='md:w-[1500px] sm:w-[500px] sm:h-[300px]  md:h-[600px]' src="https://www.youtube.com/embed/RpzxB5bmwmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
      </div>
      
      
-     <div className='flex flex-row mt-[30px] gap-6'>
-      <div className='flex flex-col ml-[160px]'>
+     <div className='flex sm:flex-col  md:flex-row mt-[30px] gap-6'>
+      
+      <div className='flex flex-col md:ml-[160px] ml-[50px]'>
     <h2 className='text-[50px] text-[#1d2951]  w-[500px] font-bold'>We Take Care Of <br /> Your Health</h2>
-     <Link href='/appointment'><button type="submit" className='text-white bg-blue-600 mt-6 border w-[200px] h-[45px] px-2 py-2'>Book for schedule</button></Link>
+     <Link href='/appointment'><button type="submit" className='text-white bg-blue-600 mt-6 border w-[200px] h-[45px] px-2 py-2 hover:bg-white hover:text-blue-500'>Book for schedule</button></Link>
       </div>
-      <div className='ml-[450px] w-[500px]'>
+      <div className='md:ml-[450px] sm:ml-[50px] w-[500px]'>
       <div>
-        <div className='flex'>
+        <div className='md:flex md:flex-row sm:flex-col'>
       <span className='mt-1'><BsCheckCircleFill size={20} /></span>
       <span className='ml-4 text-xl font-semibold text-[#1d2951] mr-5'>No waiting period</span> 
       <span  className='mt-1'><BsCheckCircleFill size={20}/></span>
       <span className='ml-3 text-xl font-semibold text-[#1d2951]'>Instant Health Reports</span>
       </div>
+      
       <p className='mt-[20px]'>We provide always the best of our services for our clients <br /> and listen to what they say about me and about my care <br /> and services.</p>
       </div>
       <div className="flex flex-row space-x-12 mt-5 bg-[#FF8C00] w-[450px] text-white p-4">
@@ -85,12 +88,13 @@ export default  function page() {
         </div>
         </div>
       </div>
+     
      </div>
 
-     <div className='ml-[160px] mt-[200px]'>
+     <div className='md:ml-[160px] sm:ml-[50px] mt-[200px]'>
       <h2 className='text-[40px] text-[#1d2951] w-[500px] font-bold'>How to Get Help <br /> from Us</h2>
       
-      <div className='flex flex-row gap-6 mt-[30px]'>
+      <div className='flex sm:flex-col md:flex-row gap-6 mt-[30px]'>
         <div className='border border-[#ffedd5] w-[350px] h-[250px] p-5'>
            <div className=''>
           <AiOutlineCalendar size={20} color='#FF8C00'/>
@@ -122,25 +126,19 @@ export default  function page() {
       </div>
      </div>
 
-     <div className='flex justify-center mt-[50px]'>
+     <div className='md:flex md:justify-center md:ml-[160px] ml-[80px] mt-[50px]'>
       <h2 className='text-[40px] text-[#1d2951] w-[500px] font-bold'>Our Top Doctors' List With Categories</h2>
+     <div className='flex justify-center mt-[50px]'>
+      <h2 className='text-[40px] text-[#1d2951] w-[500px] font-bold'>Our Top Doctors List With Categories</h2>
+     </div>
      </div>
 
-     <div className="flex ml-[160px] w-[250px]  border-b-2 mt-3">
-      <span className="text-2xl text-blue-500  mt-2">
-      Gastroenterologists
-      </span>
-      <span className='mb-1 bg- text-blue-500'> <RiArrowDropUpLine size={40}/></span>
-      </div>
-      <div className='mt-[30px] w-[530px]'>
-      <p className='ml-[160px]'>Nutrition and lifestyle changes gives you the clearest path forward with success</p>
-      </div>
       
-      <div className="grid grid-cols-3 mt-[50px] ml-[160px]">
-        {/* <div className="grid grid-cols-2 gap-[10px] col-span-2">
-          {sam}
-        </div> */}
-        <div className="col-span-1 mt-[200px]">
+      <div className="md:grid md:grid-cols-3 mt-[50px] md:ml-[160px] ml-[50px]">
+        <div className="md:col-span-2">
+        
+        </div>
+        <div className="md:col-span-1 mt-[200px]">
           <ul>
             <Link href=''>
             <li className='border-b-2 pb-4 text-4xl text-blue-500 w-[350px]'>Dermatologists</li>
@@ -159,13 +157,13 @@ export default  function page() {
             </Link>
            </ul>
            <Link href="/doctors">
-           <button className='text-white bg-blue-600 mt-6 border rounded-md w-[200px] h-[45px] px-2 py-2'>View all Doctors</button>
+           <button className='text-white bg-blue-600 mt-6 border rounded-md w-[200px] h-[45px] px-2 py-2 hover:bg-blue-950 '>View all Doctors</button>
            </Link>
         </div>
        </div>
     
     
-    <div className="mt-[200px] flex flex-col justify-center items-center space-y-4">
+    <div className="md:mt-[200px] md:flex md:flex-col md:justify-center md:items-center md:space-y-4 hidden">
       <h2 className='text-[40px] text-[#1d2951] font-bold'>Our Approach</h2>
       <p>Receive your tailored health plan, create <br /> <span className='ml-3'>our Bravaa supplements and more.</span></p>
        <div className="flex flex-row space-x-28">
@@ -188,14 +186,15 @@ export default  function page() {
   </div>
     
     <div className="mt-[100px]">
-      <h2 className='flex justify-center items-center text-[40px] text-[#1d2951] font-bold'>Read Our Latest Blogs</h2>
+      <h2 className='md:flex md:justify-center md:items-center text-[40px] text-[#1d2951] font-bold md:ml-[160px] ml-[80px]'>Read Our Latest Blogs</h2>
     </div>
 
-    <div className="grid grid-cols-2 ml-[120px] mt-[100px] space-y-7">
+    <div className="md:grid md:grid-cols-2 flex flex-col md:ml-[120px] ml-[50px] mt-[100px] space-y-7">
       
       <div className="flex w-[600px] rounded-lg h-[200px]">
         <div className="">
-        <Image className="rounded-lg" src='https://images.unsplash.com/photo-1581091013158-5c7184f43b62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' width={200} height={420}/>
+        <Image className="rounded-lg" src='https://images.unsplash.com/photo-1581091013158-5c7184f43b62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' alt='laboratory' width={200} height={420}/>
+        <Image className="rounded-lg" src='https://images.unsplash.com/photo-1581091013158-5c7184f43b62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' alt="medics" width={200} height={420}/>
        </div>
        <div className="pl-4 pt-5 space-y-5 bg-slate-100 pb-1">
        <h2 className='text-2xl font-semibold'>Health Shots</h2>
@@ -207,9 +206,13 @@ export default  function page() {
       </div>
       </div>
       
+
+      <div className="flex w-[600px] rounded-lg"> 
+        <div className="">
+          <Image className="rounded-lg" src='https://images.unsplash.com/photo-1581091007718-0c50d599bfd0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' alt='medics' width={200} height={400}/>
       {/* <div className="flex w-[600px] rounded-lg">
         <div className="">
-          <Image className="rounded-lg" src='https://images.unsplash.com/photo-1638202993928-7267aad84c31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' width={200} height={400}/>
+          <Image className="rounded-lg" src='https://images.unsplash.com/photo-1638202993928-7267aad84c31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' alt="medications" width={200} height={400}/>
         </div>
         <div className="pl-4 pt-5 space-y-5  bg-slate-100">
        <h2 className='text-2xl font-semibold'>Physicians Weekly</h2>
@@ -223,7 +226,7 @@ export default  function page() {
 
       <div className="flex w-[600px] rounded-lg"> 
         <div className="">
-          <Image className="rounded-lg" src='https://images.unsplash.com/photo-1581091007718-0c50d599bfd0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' width={200} height={400}/>
+          <Image className="rounded-lg" src='https://images.unsplash.com/photo-1581091007718-0c50d599bfd0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' alt="hospital" width={200} height={400}/>
         </div>
         <div className="pl-4 pt-5 space-y-5  bg-slate-100 ">
        <h2 className='text-2xl font-semibold'>Health Affairs</h2>
@@ -237,7 +240,8 @@ export default  function page() {
 
       <div className="flex w-[600px] rounded-lg">
         <div className="">
-          <Image className="rounded-lg" src='  https://images.unsplash.com/photo-1562243061-204550d8a2c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' width={200} height={400}/>
+          <Image className="rounded-lg" src='  https://images.unsplash.com/photo-1562243061-204550d8a2c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' alt='medicals' width={200} height={400}/>
+          <Image className="rounded-lg" src='  https://images.unsplash.com/photo-1562243061-204550d8a2c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' alt="doc" width={200} height={400}/>
         </div>
         <div className="pl-4 pt-5 space-y-5 bg-slate-100">
         <h2 className='text-2xl font-semibold'>Medicine Matters</h2>
@@ -248,46 +252,25 @@ export default  function page() {
        <Readmore text={para4}/>
         </div>
       </div>
-
-      <div className="flex w-[600px] rounded-lg">
-        <div className="">
-          <Image className="rounded-lg" src=' https://images.unsplash.com/photo-1581091013158-5c7184f43b62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' width={200} height={400}/>
-        </div>
-        <div className="pl-4 pt-5 space-y-5  bg-slate-100">
-        <h2 className='text-2xl font-semibold'>Biomedical Central</h2>
-       <div className="space-x-3">
-       <span className='border bg-slate-300 py-1 px-2'>June 21,2023</span>
-       <span className='border bg-slate-300 py-1 px-2'>NPR</span>
-       </div>
-       <Readmore text={para5}/>
-        </div>
       </div>
-        
-        {/* <div className="flex w-[600px] rounded-lg">
-        <div className="">
-          <Image className="rounded-lg" src='https://plus.unsplash.com/premium_photo-1675033559419-295e2e4187f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=663&q=80' width={200} height={400}/>
-        </div>
-        <div className="pl-4 pt-5 space-y-5  bg-slate-100">
-        <h2 className='text-2xl font-semibold'>Stanford Medicine 25 Blog</h2>
-      <div className="space-x-3">
-      <span className='border bg-slate-300 py-1 px-2>June 21,2023</span>
-       <span className='border bg-slate-300 py-1 px-2'></span>NPR</span>
-         </div>
-       <Readmore text={para6}/>
-        </div>
-      </div> */}
-    
-    
-    </div>
-    
-   
-   
-   
-   
-   
-   
-    </div>
 
+
+        
+      
+        
+        
+    
+    
+    
+   
+   
+   
+   
+   
+   
+    </div>
+    </div>
+    </div>
   
   )
 }
