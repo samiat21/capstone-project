@@ -48,11 +48,9 @@ export default  function page() {
   return (
     <div className=''>
       
-      <div  className='mt-[150px] md:mx-[200px] sm:ml-[50px]'>
-          {/* <video  className='w-[2000px] mt-[50px] h-[600px] ml-[100px]'>
-          <source src='/doctor2patient.mp4'  controls={true} type='video/mp4'/>
-          </video> */}
-          <iframe className='md:w-[1500px] sm:w-[500px] sm:h-[300px]  md:h-[600px]' src="https://www.youtube.com/embed/RpzxB5bmwmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div  className='mt-[150px] md:mx-[200px] sm:mx-[30px]'>
+          
+          <iframe className='md:w-[1500px] sm:w-[500px]  sm:h-[300px]  md:h-[600px]' src="https://www.youtube.com/embed/RpzxB5bmwmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
      </div>
      
      
