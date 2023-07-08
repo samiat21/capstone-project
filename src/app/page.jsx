@@ -13,7 +13,7 @@ import {TbSquareRoundedChevronRightFilled} from 'react-icons/tb'
 import {IoChevronForwardCircleOutline} from 'react-icons/io5'
 import Footer from './Components/Footer'
 import Readmore from './Components/Readmore'
-import Swiper from 'swiper'
+
 
 
 // async function doctorsname(){
