@@ -43,8 +43,8 @@ export default async function page() {
     <div className={satis.className}>
       <h1 className='flex justify-center text-5xl'>OUR DOCTORS</h1>
     </div>
-     <div className='grid grid-cols-3 mt-[100px] ml-20 space-y-7'>
-      {doctorsJson[3].name}
+     <div className='grid md:grid-cols-3 grid-cols-1 mt-[100px] md:ml-20 mx-40 space-y-7'>
+      {/* {doctorsJson[3].name} */}
       {dlist}
     </div>
    </div>

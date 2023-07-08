@@ -7,8 +7,8 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <div className='flex flex-row space-x-28 bg-[#1d2951] w-full h-[300px] mt-[200px]'>
-        <div className='flex flex-col pl-[400px] pt-12'>
+    <div className='md:flex md:flex-row grid grid-cols-2 space-x-28 bg-[#1d2951] mt-[200px]'>
+        <div className='flex flex-col md:pl-[400px] sm:pl-[100px] pt-12'>
         <ul className='space-y-3'>
             <li className='text-white'>Explore</li>
             <li className='pt-4'>Doctors</li>

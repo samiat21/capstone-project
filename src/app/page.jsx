@@ -186,11 +186,11 @@ export default  function page() {
       <h2 className='md:flex md:justify-center md:items-center text-[40px] text-[#1d2951] font-bold md:ml-[160px] ml-[80px]'>Read Our Latest Blogs</h2>
     </div>
 
-    <div className="md:grid md:grid-cols-2 flex flex-col md:ml-[120px] ml-[50px] mt-[100px] space-y-7">
+    <div className="md:grid md:grid-cols-2 flex flex-col md:ml-[120px] ml-[20px] mt-[100px] space-y-7">
       
-      <div className="flex w-[600px] rounded-lg h-[200px]">
+      <div className="flex md:w-[600px] w-[500px] rounded-lg h-[200px]">
         <div className="">
-        <Image className="rounded-lg" src='https://images.unsplash.com/photo-1581091013158-5c7184f43b62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' alt='laboratory' width={200} height={420}/>
+        <Image className="rounded-lg" src='https://images.unsplash.com/photo-1581091013158-5c7184f43b62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' alt='laboratory' width={200} height={400}/>
     
        </div>
        <div className="pl-4 pt-5 space-y-5 bg-slate-100 pb-1">

@@ -6,7 +6,7 @@ import {MdAddIcCall} from 'react-icons/md'
 export default function page() {
   return (
     <div className='mt-[150px]'>
-      <div className="grid grid-cols-3 ml-[50px] space-x-6 mr-10">
+      <div className="grid md:grid-cols-3 grid-cols-1 ml-[50px] md:space-x-6 space-y-6 mr-10">
         <div className="flex flex-row bg-[#1d2951] text-white px-6 py-6 space-x-4">
           <span><CiLocationOn size={40} /></span>
           <span>3, Ewu-Owa close, Gberigbe, Ikorodu, Lagos state,<br /> Nigeria.</span>
@@ -21,7 +21,7 @@ export default function page() {
         </div>
       </div>
         
-        <div className='grid grid-cols-2 mt-[50px] space-x-8 ml-[50px]'>
+        <div className='grid md:grid-cols-2 grid-cols-1 mt-[50px] space-x-8 ml-[50px]'>
           <div className=' mt-[50px] '>
           <h2 className='text-[30px] text-[#1d2951] font-bold'>Contact Form</h2>
           <form className='flex flex-col space-y-6'>
@@ -37,8 +37,8 @@ export default function page() {
           </form><br />
           <button className='bg-blue-600 border px-2 py-2 text-white' type="submit">Submit</button>
           </div>
-          <div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.349889622719!2d3.6047752614678847!3d6.603368772200631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103be5a6ec9baae7%3A0xf8674f5c17d32f36!2sBEYOND%2021ST%20HOSPITAL%20EWU%20OWA!5e0!3m2!1sen!2sng!4v1688062022521!5m2!1sen!2sng" width="800" height="750" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div className='sm:mt-[50px]'>
+          <iframe className='sm:w-[500px]' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.349889622719!2d3.6047752614678847!3d6.603368772200631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103be5a6ec9baae7%3A0xf8674f5c17d32f36!2sBEYOND%2021ST%20HOSPITAL%20EWU%20OWA!5e0!3m2!1sen!2sng!4v1688062022521!5m2!1sen!2sng" width="800" height="750" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
 

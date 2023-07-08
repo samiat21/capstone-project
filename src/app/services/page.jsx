@@ -4,9 +4,9 @@ import React from 'react'
 export default function page() {
   return (
     <div className='mt-[150px] mx-[50px]'>
-       <h1 className='flex justify-center text-[60px] font-bold text-[#1d2951]'>OUR SERVICES</h1>
+       <h1 className='flex justify-center md:text-[60px] text-[30px] font-bold text-[#1d2951]'>OUR SERVICES</h1>
        
-      <div className='grid grid-cols-2 mt-[50px]  space-x-12'>
+      <div className='grid md:grid-cols-2 grid-cols-1 mt-[50px]  space-x-12'>
         <div className="s">
        <p>Our  medical center offers a wide range of medical specialties, covering various fields of healthcare. Some of the prominent specialties
          include:</p><br />
@@ -44,7 +44,7 @@ export default function page() {
 
 
 <div>
-       <p className='font-semibold text-3xl text-[#1d2951]'>Additional Services:</p><br />
+       <p className='font-semibold text-3xl text-[#1d2951] sm:mt-[50px]'>Additional Services:</p><br />
 <ul>
   <li>
   <span className='font-semibold text-[#1d2951]'>Diagnostic Imaging:</span> The center is equipped with advanced imaging technologies, including MRI, CT scan, ultrasound, and X-ray, enabling accurate 
