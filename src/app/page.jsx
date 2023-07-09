@@ -13,7 +13,7 @@ import {TbSquareRoundedChevronRightFilled} from 'react-icons/tb'
 import {IoChevronForwardCircleOutline} from 'react-icons/io5'
 import Footer from './Components/Footer'
 import Readmore from './Components/Readmore'
-import Swiper from 'swiper'
+import SwiperComponent from './Components/Swiper'
 
 
 // async function doctorsname(){
@@ -125,13 +125,13 @@ export default  function page() {
      </div>
 
      <div className='md:flex md:justify-center md:ml-[160px] ml-[80px] mt-[50px]'>
-      <h2 className='text-[40px] text-[#1d2951] w-[500px] font-bold'>Our Top Doctors' List With Categories</h2>
+      <h2 className='text-[40px] text-[#1d2951] w-[500px] font-bold'>Our Top Doctors List With Categories</h2>
      </div>
     
       
-      <div className="md:grid md:grid-cols-3 mt-[50px] md:ml-[160px] ml-[50px]">
+      <div className="md:grid md:grid-cols-3 grid-cols-1 mt-[50px] md:ml-[160px] ml-[50px]">
         <div className="md:col-span-2">
-        
+        <SwiperComponent />
         </div>
         <div className="md:col-span-1 mt-[200px]">
           <ul>
@@ -201,23 +201,6 @@ export default  function page() {
       </div>
       </div>
       
-
-      {/* <div className="flex w-[600px] rounded-lg"> 
-        < className="">
-          <Image className="rounded-lg" src='https://images.unsplash.com/photo-1581091007718-0c50d599bfd0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' alt='medics' width={200} height={400}/>
-      {/* <div className="flex w-[600px] rounded-lg"> */}
-        {/* <div className="">
-          <Image className="rounded-lg" src='https://images.unsplash.com/photo-1638202993928-7267aad84c31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' alt="medications" width={200} height={400}/>
-        </div>
-        <div className="pl-4 pt-5 space-y-5  bg-slate-100">
-       <h2 className='text-2xl font-semibold'>Physicians Weekly</h2>
-       <div className="space-x-3">
-       <span className='border bg-slate-300 py-1 px-2'>June 21,2023</span>
-       <span className='border bg-slate-300 py-1 px-2'>NPR</span>
-        </div>
-       <Readmore text={para2}/>
-        </div>
-       */}
 
       <div className="flex w-[600px] rounded-lg"> 
         <div className="">
