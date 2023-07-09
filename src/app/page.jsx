@@ -7,7 +7,6 @@ import {BsFillTagFill} from 'react-icons/bs'
 import {RiArrowDropUpLine} from 'react-icons/ri'
 import Link from 'next/link'
 import './globals.css'
-import Doc from './Components/Doctorsname'
 import Image from 'next/image'
 import {TbSquareRoundedChevronRightFilled} from 'react-icons/tb'
 import {IoChevronForwardCircleOutline} from 'react-icons/io5'
@@ -16,26 +15,8 @@ import Readmore from './Components/Readmore'
 import SwiperComponent from './Components/Swiper'
 
 
-// async function doctorsname(){
-//   const response = await fetch('https://raw.githubusercontent.com/samiat21/data-json/main/data.json')
-//   const data = await response.json()
-
-//   return data
-// }
-
 
 export default  function page() {
-  // const data = await doctorsname()
-  // const sam = data.map(doctor =>(
-  //     <div key={doctor.id}>
-  
-  //     <Image src={doctor.image} alt={doctor.name} width={350} height={350} title={doctor.name}/>
-  //     <h2>{doctor.name}</h2>
-  //     <p>{doctor.specialty}</p>
-  //     <p className='w-[350px]'>{doctor.job_description}</p>
-  //       </div>
-
-  // ))
 
        const para1 = 'The health news division of NPR is your go-to source for the state of healthcare across the nation and around the world. NPR Shots will keep you in the know about everything from epidemics and public health concerns to the latest news about the insurance industry. You will always be on top of current events in the wellness space if you follow this blog.'
        const para2 = 'For nearly 40 years, Physicians Weekly LLC, has been a trusted source of medical news and education for healthcare professionals. Physicians Weekly provides trusted medical news to healthcare professionals in over 10,000 top medical institutions, linking current and best healthcare practices to successfully meet todays challenges in the medical field.'
