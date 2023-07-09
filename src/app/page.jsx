@@ -125,7 +125,7 @@ export default  function page() {
      </div>
 
      <div className='md:flex md:justify-center md:ml-[160px] ml-[80px] mt-[50px]'>
-      <h2 className='text-[40px] text-[#1d2951] w-[500px] font-bold'>Our Top Doctors' List With Categories</h2>
+      <h2 className='text-[40px] text-[#1d2951] w-[500px] font-bold'>Our Top Doctors List With Categories</h2>
      </div>
     
       
