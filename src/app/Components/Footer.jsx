@@ -52,7 +52,7 @@ export default function Footer() {
         </div>
        </div><br /><br />
        <div className="flex justify-center text-white pb-5">
-            <p>Samnik's Health, Copyright &copy; 2023</p>
+            <p>Samnik&apos;s Health, Copyright &copy; 2023</p>
           </div>
   </div>
   )
