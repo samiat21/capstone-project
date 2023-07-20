@@ -10,6 +10,7 @@ import Image from 'next/image'
 import {TbSquareRoundedChevronRightFilled} from 'react-icons/tb'
 import Readmore from './Components/Readmore'
 import SwiperComponent from './Components/Swiper'
+import {FcCalculator} from "react-icons/fc"
 
 
 
@@ -99,11 +100,10 @@ export default  function page() {
             <p>Online or in-center,we take the time to learn all about you and go beyond the symptoms to find the root of your condition.</p>
           </div>
           </div>
-          <div className="">
-            <Link href="/bmi">
-            <p>BMI Calculator</p>
-            </Link>
-          </div>
+          <div className="flex mt-[100px] md:mt-[200px] ml-[50px]">
+            <FcCalculator size={50} />
+           <p><span className='text-2xl text-blue-500'>BMI calculator ?</span><Link href="/bmi"><span className='underline text-slate-500 hover:text-blue-500'>Click here</span></Link></p>
+             </div>
           
       </div>
      </div>
