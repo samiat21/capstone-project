@@ -10,7 +10,6 @@ import Image from 'next/image'
 import {TbSquareRoundedChevronRightFilled} from 'react-icons/tb'
 import Readmore from './Components/Readmore'
 import SwiperComponent from './Components/Swiper'
-import Bmi from './Components/Bmi'
 
 
 
@@ -100,14 +99,12 @@ export default  function page() {
             <p>Online or in-center,we take the time to learn all about you and go beyond the symptoms to find the root of your condition.</p>
           </div>
           </div>
-          <div className="md:ml-[100px] ml-[10px] space-y-6 bg-slate-500 p-5 md:p-16">
-            <p className='font-bold text-2xl text-blue-500'>BMI Calculator</p>
-           <p className='text-white text-lg font-semibold'> Just enter your weight and height !</p>
-           <input className='weight p-1' type="number" name="weight" id="weight" placeholder='Your weight' /><br />
-           <input className='height p-1' type="number" name="height" id="height" placeholder='Your height' /><br />
-           <button type='submit' className='btn bg-blue-500 p-2 hover:bg-white'>Check</button>
-           <p className='result text-white'></p>
+          <div className="">
+            <Link href="/bmi">
+            <p>BMI Calculator</p>
+            </Link>
           </div>
+          
       </div>
      </div>
 

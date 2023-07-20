@@ -11,26 +11,26 @@ export default function Footer() {
     <div className='md:flex md:flex-row grid grid-cols-2 space-x-28 '>
         <div className='flex flex-col md:pl-[400px] sm:pl-[100px] pt-12'>
         <ul className='space-y-3'>
-            <li className='text-white'>Explore</li>
-            <li className='pt-4'>Doctors</li>
-            <li>Services</li>
-            <li>How it Works</li>
+            <li className='text-white hover:text-black'>Explore</li>
+            <Link href="/doctors"><li className='pt-4 hover:text-white'>Doctors</li></Link>
+            <Link href="/services"><li className='hover:text-white'>Services</li></Link>
+            <Link href="/support"><li className='hover:text-white'>How it Works</li></Link>
         </ul>
         </div>
         <div className='flex flex-col pt-12 space-y-16'>
-        <ul  className='space-y-3'>
-            <li className='text-white'>Support</li>
-            <li className='pt-4'>About</li>
-            <li>Services</li>
+        <ul className='space-y-3'>
+           <Link href="/support"> <li className='text-white hover:text-black'>Support</li></Link>
+          <Link href="/about"><li className='pt-4 hover:text-white'>About</li></Link>
+           <Link href="/services"> <li className='hover:text-white'>Services</li></Link>
             <li>Terms & Conditions</li>
         </ul>
         </div>
         <div className='flex flex-col pt-12 space-y-16'>
         <ul  className='space-y-3'>
-            <li className='text-white'>Links</li>
-            <li className='pt-4'>Home</li>
-            <li>Services</li>
-            <li>How it Works</li>
+            <Link href="/"><li className='text-white hover:text-black'>Links</li></Link>
+           <Link href="/"> <li className='pt-4 hover:text-white'>Home</li></Link>
+         <Link href="/services"><li className='hover:text-white'>Services</li></Link>
+         <Link href="/about"><li className='hover:text-white'>How it Works</li></Link>
         </ul>
         </div>
 
@@ -52,7 +52,7 @@ export default function Footer() {
         </div>
        </div><br /><br />
        <div className="flex justify-center text-white pb-5">
-            <p>Samnik's Health, Copyright &copy; 2023</p>
+            <p>Samnik&apos;s Health, Copyright &copy; 2023</p>
           </div>
   </div>
   )
