@@ -1,19 +1,21 @@
 'use client'
 import React from 'react'
-import { doctorsJson } from '../page'
+import { doctorsJson } from '../page' 
 
-function fetchDoctors(params){
+ function fetchDoctors(params){
 
-    const doctors = doctorsJson.find((doctor)=>doctor.id === params.slug)
+    const medicals = doctorsJson.find((medical) => medical.id == params.slug)
+    
 
-    return doctors
+    return medicals
 }
 
 export default async function page({params}) {
-    const doctor = fetchDoctors(params)
+const medicals = fetchDoctors(params)
+
   return (
-    <div className='mt-[150px]'>
-        <h1>About {doctor.name} </h1>
+    <div className='mt-[150px] h-screen'>
+        <h1>{`About Ajobi ${medicals.name}`}</h1> 
     </div>
   )
 }

@@ -7,7 +7,8 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <div className='md:flex md:flex-row grid grid-cols-2 space-x-28 bg-[#1d2951] mt-[200px]'>
+    <div className='bg-[#1d2951] mt-[200px]'>
+    <div className='md:flex md:flex-row grid grid-cols-2 space-x-28 '>
         <div className='flex flex-col md:pl-[400px] sm:pl-[100px] pt-12'>
         <ul className='space-y-3'>
             <li className='text-white'>Explore</li>
@@ -45,14 +46,14 @@ export default function Footer() {
          <Link href='https://www.instagram.com'><span><AiFillInstagram size={20} /></span></Link>
          <Link href='https://www.twitter.com'><span><BsTwitter size={20} /></span></Link>
           </div>
-          <div className="">
-            
-          </div>
+          
           
           </div>
         </div>
-    
-    
-    </div>
+       </div><br /><br />
+       <div className="flex justify-center text-white pb-5">
+            <p>Samnik's Health, Copyright &copy; 2023</p>
+          </div>
+  </div>
   )
 }

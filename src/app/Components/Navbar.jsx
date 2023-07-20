@@ -6,6 +6,9 @@ import { useState } from 'react'
 import {MdOutlineClose} from 'react-icons/md'
 import {AiFillFacebook, AiFillInstagram } from 'react-icons/ai' 
 import {BsTwitter} from 'react-icons/bs'
+import Image from 'next/image'
+import logomed from '../media/logomed.png'
+
 
 export default function Navbar() {
   
@@ -20,9 +23,13 @@ export default function Navbar() {
 
 
   return (
-    <nav className='flex justify-between items-center bg-blue-500 text-white w-[100vw] h-[100px] px-6 fixed top-0'> 
+  
+    <nav className='flex justify-between items-center bg-blue-500 text-white w-[100vw] h-[100px] px-6 fixed top-0 z-[1]'> 
+    
         <div>
-            <h2 className=''><span>Bra</span>vaa</h2>
+        <Link href='/about'>
+            <Image src={logomed} alt='logo' width={130} height={50} />
+            </Link>
         </div>
         <div className='hidden md:flex'>
         <ul className='hidden md:flex gap-6'>

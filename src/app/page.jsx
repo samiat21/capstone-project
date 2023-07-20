@@ -4,45 +4,24 @@ import {BsCheckCircleFill} from 'react-icons/bs'
 import {AiOutlineCalendar} from 'react-icons/ai'
 import {HiOutlineCube} from 'react-icons/hi'
 import {BsFillTagFill} from 'react-icons/bs'
-import {RiArrowDropUpLine} from 'react-icons/ri'
 import Link from 'next/link'
 import './globals.css'
-import Doc from './Components/Doctorsname'
 import Image from 'next/image'
 import {TbSquareRoundedChevronRightFilled} from 'react-icons/tb'
-import {IoChevronForwardCircleOutline} from 'react-icons/io5'
-import Footer from './Components/Footer'
 import Readmore from './Components/Readmore'
 import SwiperComponent from './Components/Swiper'
+import Bmi from './Components/Bmi'
 
 
-// async function doctorsname(){
-//   const response = await fetch('https://raw.githubusercontent.com/samiat21/data-json/main/data.json')
-//   const data = await response.json()
-
-//   return data
-// }
 
 
 export default  function page() {
-  // const data = await doctorsname()
-  // const sam = data.map(doctor =>(
-  //     <div key={doctor.id}>
-  
-  //     <Image src={doctor.image} alt={doctor.name} width={350} height={350} title={doctor.name}/>
-  //     <h2>{doctor.name}</h2>
-  //     <p>{doctor.specialty}</p>
-  //     <p className='w-[350px]'>{doctor.job_description}</p>
-  //       </div>
-
-  // ))
 
        const para1 = 'The health news division of NPR is your go-to source for the state of healthcare across the nation and around the world. NPR Shots will keep you in the know about everything from epidemics and public health concerns to the latest news about the insurance industry. You will always be on top of current events in the wellness space if you follow this blog.'
-       const para2 = 'For nearly 40 years, Physicians Weekly LLC, has been a trusted source of medical news and education for healthcare professionals. Physicians Weekly provides trusted medical news to healthcare professionals in over 10,000 top medical institutions, linking current and best healthcare practices to successfully meet todays challenges in the medical field.'
       const para3 = 'Health Affairs is the leading journal of health policy thought & research. The peer-reviewed journal was founded in 1981 under the aegis of Project HOPE. Health Affairs explores health policy issues of current concern in domestic & international spheres.'
       const para4 = 'Sharing successes, challenges and daily happenings in the department of medicine. Johns Hopkins Medicine are committed to promoting biomedical discovery, teaching the next generation of doctors, and improving health in our neighborhood and around the world.'
       const para5 = 'Insights and opinions on the latest medical research, clinical practices, and developments in the field. At BMC, research is always in progress. We are committed to continual innovation to better support the needs of our communities, ensuring the integrity of the research we publish & championing the benefits of open research.'
-      const para6 = 'The Stanford Medicine 25 Blog features articles promoting the culture of bedside medicine. Stanford Medicine 25 teaches and promotes bedside medicine exam skills to students, residents, and healthcare professionals both in-person and online. The Stanford Medicine 25 team is the core group of physicians, faculty, and students led by Dr. Abraham  Verghese.'
+    
        
 
   return (
@@ -62,7 +41,7 @@ export default  function page() {
       </div>
       <div className='md:ml-[450px] sm:ml-[50px] w-[500px]'>
       <div>
-        <div className='md:flex md:flex-row sm:flex-col'>
+        <div className='md:flex flex-row'>
       <span className='mt-1'><BsCheckCircleFill size={20} /></span>
       <span className='ml-4 text-xl font-semibold text-[#1d2951] mr-5'>No waiting period</span> 
       <span  className='mt-1'><BsCheckCircleFill size={20}/></span>
@@ -120,6 +99,14 @@ export default  function page() {
             <h3 className='text-xl text-[#1d2951] font-semibold'>Start your plan</h3><br />
             <p>Online or in-center,we take the time to learn all about you and go beyond the symptoms to find the root of your condition.</p>
           </div>
+          </div>
+          <div className="md:ml-[100px] ml-[10px] space-y-6 bg-slate-500 p-5 md:p-16">
+            <p className='font-bold text-2xl text-blue-500'>BMI Calculator</p>
+           <p className='text-white text-lg font-semibold'> Just enter your weight and height !</p>
+           <input className='weight p-1' type="number" name="weight" id="weight" placeholder='Your weight' /><br />
+           <input className='height p-1' type="number" name="height" id="height" placeholder='Your height' /><br />
+           <button type='submit' className='btn bg-blue-500 p-2 hover:bg-white'>Check</button>
+           <p className='result text-white'></p>
           </div>
       </div>
      </div>

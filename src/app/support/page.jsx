@@ -35,7 +35,7 @@ export default function page() {
             <textarea className='border h-[200px]' name="address" id="address"></textarea>
 
           </form><br />
-          <button className='bg-blue-600 border px-2 py-2 text-white' type="submit">Submit</button>
+          <button className='bg-blue-600 border px-2 py-2 text-white hover:text-blue-500 hover:bg-white' type="submit">Submit</button>
           </div>
           <div className='sm:mt-[50px]'>
           <iframe className='sm:w-[500px] md:w-[800px]' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.349889622719!2d3.6047752614678847!3d6.603368772200631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103be5a6ec9baae7%3A0xf8674f5c17d32f36!2sBEYOND%2021ST%20HOSPITAL%20EWU%20OWA!5e0!3m2!1sen!2sng!4v1688062022521!5m2!1sen!2sng" width="800" height="750" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
