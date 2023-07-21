@@ -200,7 +200,7 @@ export default  function page() {
         </div>
       </div>
 
-      <div className="flex w-[600px] rounded-lg">
+      {/* <div className="flex w-[600px] rounded-lg">
         <div className="">
           <Image className="rounded-lg" src='  https://images.unsplash.com/photo-1562243061-204550d8a2c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' alt='medicals' width={200} height={400}/>
         </div>
@@ -227,7 +227,7 @@ export default  function page() {
        <Readmore text={para5}/>
         </div>
       </div>
-
+ */}
 
         
       
