@@ -200,49 +200,8 @@ export default  function page() {
         </div>
       </div>
 
-      {/* <div className="flex w-[600px] rounded-lg">
-        <div className="">
-          <Image className="rounded-lg" src='  https://images.unsplash.com/photo-1562243061-204550d8a2c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' alt='medicals' width={200} height={400}/>
-        </div>
-        <div className="pl-4 pt-5 space-y-5 bg-slate-100">
-        <h2 className='text-2xl font-semibold'>Medicine Matters</h2>
-        <div className="space-x-3">
-       <span className='border bg-slate-300 py-1 px-2'>June 21,2023</span>
-       <span className='border bg-slate-300 py-1 px-2'>NPR</span>
-        </div>
-       <Readmore text={para4}/>
-        </div>
-      </div>
-
-      <div className="flex w-[600px] rounded-lg">
-        <div className="">
-          <Image className="rounded-lg" src=' https://images.unsplash.com/photo-1581091013158-5c7184f43b62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' alt="hosp" width={200} height={400}/>
-        </div>
-        <div className="pl-4 pt-5 space-y-5  bg-slate-100">
-        <h2 className='text-2xl font-semibold'>Biomedical Central</h2>
-       <div className="space-x-3">
-       <span className='border bg-slate-300 py-1 px-2'>June 21,2023</span>
-       <span className='border bg-slate-300 py-1 px-2'>NPR</span>
-       </div>
-       <Readmore text={para5}/>
-        </div>
-      </div>
- */}
-
-        
       
-        
-        
-    
-    
-    
-   
-   
-   
-   
-   
-   
-    </div>
+ </div>
     </div>
     
   )
