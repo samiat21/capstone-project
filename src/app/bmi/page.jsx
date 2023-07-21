@@ -3,8 +3,8 @@ import React, { useState } from 'react'
 
 
 export default function Bmi() {
-    const [weight, setWeight] = useState(0)
-    const [height, setHeight] = useState(0)
+    const [weight, setWeight] = useState('')
+    const [height, setHeight] = useState('')
     const [bmi, setBmi] = useState('')
     const [message, setMessage] = useState('')
 
@@ -26,10 +26,10 @@ export default function Bmi() {
            if (bmi >= 30) {
             setMessage ("You are obese!")
         }
-        else if (bmi >= 25 || bmi <=29.9) {
+        else if (bmi >= 25 || bmi == 29.9) {
             setMessage ("You are overweight!")
          } 
-         else if (bmi >= 18.5 || bmi >= 24.9) {
+         else if (bmi >= 18.5 || bmi == 24.9) {
             setMessage ("You have a normal weight!") 
          }
          else{
@@ -46,7 +46,7 @@ export default function Bmi() {
 
     return (
         <div>
-            <div className="mt-[250px] md:ml-[400px] sm:ml-[100px] space-y-6 bg-inherit p-10 w-[50vh] md:w-[70vh] border-4 border-blue-500">
+            <div className="mt-[250px] md:ml-[400px] sm:ml-[100px] space-y-6 bg-inherit p-10 w-[50vh] md:w-[70vh] border-4 rounded-3xl border-blue-500">
            <p className='font-bold text-2xl text-blue-500 md:ml-[150px] sm:ml-[50px] uppercase'>BMI Calculator</p>
            <p className='text-blue-500 text-lg md:ml-[100px] sm:ml-[20px]'> Just enter your weight(kg) and height(m) !</p>
            <form onSubmit={calcBmi}>

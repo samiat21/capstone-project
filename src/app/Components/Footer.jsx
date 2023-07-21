@@ -35,7 +35,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-12 flex-col">
-          <p>Subscribe Newletter</p>
+          <p>Subscribe Newsletter</p>
           <div className=''>
             <div className="">
         <div className=""><input type="email" name="email" id="email" placeholder='Enter Your Email' className='bg-inherit border-b-2 pt-6 pb-2' /></div>
