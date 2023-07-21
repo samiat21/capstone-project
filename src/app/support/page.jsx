@@ -31,7 +31,7 @@ export default function page() {
             <input className='border' type="tel" name="pnumber" id="pnumber" />
             <label htmlFor="email">Email Address <span>:</span></label>
             <input className='border' type="email" name="email" id="email" />
-            <label htmlFor="address">Address <span>:</span></label>
+            <label htmlFor="address">Message <span>:</span></label>
             <textarea className='border h-[200px]' name="address" id="address"></textarea>
 
           </form><br />
