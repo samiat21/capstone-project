@@ -46,7 +46,7 @@ export default function Bmi() {
 
     return (
         <div>
-            <div className="mt-[250px] md:ml-[400px] sm:ml-[100px] space-y-6 bg-inherit p-10 w-[50vh] md:w-[70vh] border-4 rounded-3xl border-blue-500">
+            <div className="mt-[250px] md:ml-[400px] sm:ml-[100px] ml-[30px] space-y-6 bg-inherit p-10 w-[30vh] sm:w-[50vh] md:w-[70vh] border-4 rounded-3xl border-blue-500">
            <p className='font-bold text-2xl text-blue-500 md:ml-[150px] sm:ml-[50px] uppercase'>BMI Calculator</p>
            <p className='text-blue-500 text-lg md:ml-[100px] sm:ml-[20px]'> Just enter your weight(kg) and height(m) !</p>
            <form onSubmit={calcBmi}>

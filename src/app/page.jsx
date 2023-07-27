@@ -27,19 +27,19 @@ export default  function page() {
   return (
     <div className=''>
       
-      <div  className='mt-[150px] md:mx-[200px] sm:mx-[30px]'>
+      <div  className='mt-[150px] md:mx-[200px] mx-[30px]'>
           
-          <iframe className='md:w-[1500px] sm:w-[500px]  sm:h-[300px]  md:h-[600px]' src="https://www.youtube.com/embed/RpzxB5bmwmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe className='md:w-[1500px] w-[350px] h-[300px]  md:h-[600px]' src="https://www.youtube.com/embed/RpzxB5bmwmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
      </div>
      
      
-     <div className='flex sm:flex-col  md:flex-row mt-[30px] gap-6'>
+     <div className='flex flex-col  md:flex-row mt-[30px] gap-6'>
       
-      <div className='flex flex-col md:ml-[160px] ml-[50px]'>
-    <h2 className='text-[50px] text-[#1d2951]  w-[500px] font-bold'>We Take Care Of <br /> Your Health</h2>
+      <div className='flex flex-col md:ml-[160px] ml-[30px]'>
+    <h2 className='md:text-[50px] text-[40px] text-[#1d2951]  md:w-[500px] font-bold'>We Take Care Of <br /> Your Health</h2>
      <Link href='/appointment'><button type="submit" className='text-white bg-blue-600 mt-6 border w-[200px] h-[45px] px-2 py-2 hover:bg-white hover:text-blue-500'>Book for schedule</button></Link>
       </div>
-      <div className='md:ml-[450px] sm:ml-[50px] w-[500px]'>
+      <div className='md:ml-[450px] ml-[10px] md:w-[500px]'>
       <div>
         <div className='md:flex flex-row'>
       <span className='mt-1'><BsCheckCircleFill size={20} /></span>
@@ -48,9 +48,9 @@ export default  function page() {
       <span className='ml-3 text-xl font-semibold text-[#1d2951]'>Instant Health Reports</span>
       </div>
       
-      <p className='mt-[20px]'>We provide always the best of our services for our clients <br /> and listen to what they say about me and about my care <br /> and services.</p>
+      <p className='mt-[20px]'>We provide always the best of our services for our  <br />clients and listen to what they say about me and about  <br /> my care and services.</p>
       </div>
-      <div className="flex flex-row space-x-12 mt-5 bg-[#FF8C00] w-[450px] text-white p-4">
+      <div className="flex flex-row space-x-12 mt-5 bg-[#FF8C00] w-[370px] md:w-[450px] text-white p-4">
         <div className="flex flex-col">
           <span>1k+</span>
           <span>Satisfy Patients</span>
@@ -68,10 +68,10 @@ export default  function page() {
      
      </div>
 
-     <div className='md:ml-[160px] sm:ml-[50px] mt-[200px]'>
-      <h2 className='text-[40px] text-[#1d2951] w-[500px] font-bold'>How to Get Help <br /> from Us</h2>
+     <div className='md:ml-[160px] ml-[50px] mt-[200px]'>
+      <h2 className='text-[40px] text-[#1d2951] md:w-[500px] font-bold'>How to Get Help <br /> from Us</h2>
       
-      <div className='flex sm:flex-col md:flex-row gap-6 mt-[30px]'>
+      <div className='flex flex-col md:flex-row gap-6 mt-[30px]'>
         <div className='border border-[#ffedd5] w-[350px] h-[250px] p-5'>
            <div className=''>
           <AiOutlineCalendar size={20} color='#FF8C00'/>
@@ -108,12 +108,12 @@ export default  function page() {
       </div>
      </div>
 
-     <div className='md:flex md:justify-center md:ml-[160px] ml-[80px] mt-[50px]'>
-      <h2 className='text-[40px] text-[#1d2951] w-[500px] font-bold'>Our Top Doctors List With Categories</h2>
+     <div className='md:flex md:justify-center md:ml-[160px] ml-[50px] mt-[30px]'>
+      <h2 className='md:text-[40px] text-[30px] text-[#1d2951] md:w-[500px] font-bold'>Our Top Doctors List With Categories</h2>
      </div>
     
       
-      <div className="md:grid md:grid-cols-3 grid-cols-1 mt-[50px] md:ml-[160px] ml-[50px]">
+      <div className="md:grid md:grid-cols-3 grid-cols-1 mt-[50px]  md:ml-[160px] ml-[30px]">
         <div className="md:col-span-2">
         <SwiperComponent />
         </div>
@@ -168,9 +168,9 @@ export default  function page() {
       <h2 className='md:flex md:justify-center md:items-center text-[40px] text-[#1d2951] font-bold md:ml-[160px] ml-[80px]'>Read Our Latest Blogs</h2>
     </div>
 
-    <div className="md:grid md:grid-cols-2 flex flex-col md:ml-[120px] ml-[20px] mt-[100px] space-y-7">
+    <div className="md:grid md:grid-cols-2 flex flex-col space-x-16 md:ml-[120px] ml-[20px] mt-[100px] space-y-7">
       
-      <div className="flex md:w-[600px] w-[500px] rounded-lg h-[200px]">
+      <div className="flex  rounded-lg">
         <div className="">
         <Image className="rounded-lg" src='https://images.unsplash.com/photo-1581091013158-5c7184f43b62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' alt='laboratory' width={200} height={400}/>
     
@@ -186,7 +186,7 @@ export default  function page() {
       </div>
       
 
-      <div className="flex w-[600px] rounded-lg"> 
+      <div className="flex  rounded-lg"> 
         <div className="">
           <Image className="rounded-lg" src='https://images.unsplash.com/photo-1581091007718-0c50d599bfd0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' alt="hospital" width={200} height={400}/>
         </div>
@@ -200,49 +200,12 @@ export default  function page() {
         </div>
       </div>
 
-      {/* <div className="flex w-[600px] rounded-lg">
-        <div className="">
-          <Image className="rounded-lg" src='  https://images.unsplash.com/photo-1562243061-204550d8a2c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' alt='medicals' width={200} height={400}/>
-        </div>
-        <div className="pl-4 pt-5 space-y-5 bg-slate-100">
-        <h2 className='text-2xl font-semibold'>Medicine Matters</h2>
-        <div className="space-x-3">
-       <span className='border bg-slate-300 py-1 px-2'>June 21,2023</span>
-       <span className='border bg-slate-300 py-1 px-2'>NPR</span>
-        </div>
-       <Readmore text={para4}/>
-        </div>
-      </div>
-
-      <div className="flex w-[600px] rounded-lg">
-        <div className="">
-          <Image className="rounded-lg" src=' https://images.unsplash.com/photo-1581091013158-5c7184f43b62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80' alt="hosp" width={200} height={400}/>
-        </div>
-        <div className="pl-4 pt-5 space-y-5  bg-slate-100">
-        <h2 className='text-2xl font-semibold'>Biomedical Central</h2>
-       <div className="space-x-3">
-       <span className='border bg-slate-300 py-1 px-2'>June 21,2023</span>
-       <span className='border bg-slate-300 py-1 px-2'>NPR</span>
-       </div>
-       <Readmore text={para5}/>
-        </div>
-      </div>
- */}
+    
 
         
       
         
-        
-    
-    
-    
-   
-   
-   
-   
-   
-   
-    </div>
+        </div>
     </div>
     
   )

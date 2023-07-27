@@ -8,8 +8,8 @@ import Link from 'next/link'
 export default function Footer() {
   return (
     <div className='bg-[#1d2951] mt-[200px]'>
-    <div className='md:flex md:flex-row grid grid-cols-2 space-x-28 '>
-        <div className='flex flex-col md:pl-[400px] sm:pl-[100px] pt-12'>
+    <div className='md:flex md:flex-row grid grid-cols-2 md:space-x-28 space-x-12 '>
+        <div className='flex flex-col md:pl-[400px] pl-[20px] sm:pl-[100px] pt-12'>
         <ul className='space-y-3'>
             <li className='text-white hover:text-black'>Explore</li>
             <Link href="/doctors"><li className='pt-4 hover:text-white'>Doctors</li></Link>
@@ -38,8 +38,8 @@ export default function Footer() {
           <p>Subscribe Newsletter</p>
           <div className=''>
             <div className="">
-        <div className=""><input type="email" name="email" id="email" placeholder='Enter Your Email' className='bg-inherit border-b-2 pt-6 pb-2' /></div>
-        <button type="submit" className='bg-white mt-4 px-3'>submit</button>
+        <div className=""><input type="email" name="email" id="email" placeholder='Enter Your Email' className='bg-inherit border-b-2 pt-6 pb-2 w-[160px]'/></div>
+        <button type="submit" className='bg-white mt-4 px-3 hover:bg-blue-500 hover:text-white'>submit</button>
         </div>
          <div className="flex flex-row mt-4 space-x-2">
          <Link href='https://www.facebook.com'><span><AiFillFacebook size={20} /></span></Link>

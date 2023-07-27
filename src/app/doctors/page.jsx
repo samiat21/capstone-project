@@ -36,7 +36,7 @@ export default async function page() {
  
   const dlist = data.map((doctor) =>(
        <div key={doctor.id} className='transition-[1s]'>
-        <Link href={`/doctors/${doctor.id}`} title={`click to view more information about ${doctor.name}`} >
+        <Link href={`/doctors/${doctor.id}`} title={`click to view more information about ${doctor.name}`} target='_blank' >
         <Image className='rounded-2xl hover:scale-[1.2] hover:z-[2] hover:opacity-[0.5] cursor-pointer' src={doctor.image} alt={doctor.name} width={350} height={350} />
       <div className="mt-6">
       <h2 className='text-[30px]'>{doctor.name}</h2>
